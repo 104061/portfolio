@@ -1,5 +1,36 @@
+:root{
+	/* Warm beige scale — one hue (36), stepped lightness */
+	--color-cream: #f9f6f0;   /* hsl(36 44% 96%) */
+	--color-linen: #f2eade;   /* hsl(36 42% 91%) */
+	--color-beige: #e8dac4;   /* hsl(36 44% 84%) */
+	--color-sand: #d3bda1;    /* hsl(34 36% 73%) */
+	--color-taupe: #aa9174;   /* hsl(32 24% 56%) */
+
+	/* Accents, same muted saturation */
+	--color-terracotta: #c28670; /* hsl(16 40% 60%) */
+	--color-olive: #929d6c;      /* hsl(74 20% 52%) */
+
+	/* Text */
+	--color-text: #574738;        /* hsl(30 22% 28%) */
+	--color-text-muted: #887563;  /* hsl(30 16% 46%) */
+	--color-text-inverse: #fcf8f3;/* hsl(36 60% 97%) */
+
+	/* Semantic aliases */
+	--color-bg: var(--color-linen);
+	--color-surface: var(--color-cream);
+	--color-border: var(--color-sand);
+	--color-nav-bg: var(--color-sand);
+	--color-nav-pill: var(--color-olive);
+	--color-heading: var(--color-text);
+
+	background: var(--color-bg);
+}
+
+
 .nav{
-	display: flex;
+	display: grid;
+	background: var(--color-nav-bg);
+	grid-template-columns: 0.2fr 0.5fr 0.2fr;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
@@ -14,27 +45,32 @@
 }
 .nav-title h1{
 	font-size: 64px;
-	color: white;
+	color: var(--color-heading);
 }
 
 .nav-wrapper{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 50%;
+	width: 100%;
 	height: 5vh;
-	background: green;
+	background: var(--color-nav-pill);
 	border-radius: 32px;
 }
 .nav-buttons{
 	display: grid;
-	grid-template-columns: auto auto auto auto auto;
-	gap: 15%;
+	grid-template-columns: 20% 20% 20% 20% 20%;
 	width: 100%;
 	height: 100%;
 	justify-content: center;
 	align-items: center;
 }
 
+.nav-buttons a{
+	text-align: center;
+	font-size: 32px;
+	text-decoration: none;
+	color: var(--color-text);
+}
 
 

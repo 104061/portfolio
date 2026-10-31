@@ -27,6 +27,7 @@ function Navbar() {
                     <a href="" className="nav-button">Contact</a>
                 </div>
             </div>
+            <div className="nav-right"></div>
         </section>
     )
 }
