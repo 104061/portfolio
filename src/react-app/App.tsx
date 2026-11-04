@@ -7,6 +7,8 @@ function App() {
     return (
         <>
             <Navbar></Navbar>
+            <Hero></Hero>
+            <About></About>
         </>
     );
 }
@@ -20,7 +22,6 @@ function Navbar() {
             </div>
             <div className="nav-wrapper">
                 <div className="nav-buttons">
-                    <a href="" className="nav-button">Home</a>
                     <a href="" className="nav-button">About</a>
                     <a href="" className="nav-button">Projects</a>
                     <a href="" className="nav-button">Skills</a>
@@ -28,6 +29,26 @@ function Navbar() {
                 </div>
             </div>
             <div className="nav-right"></div>
+        </section>
+    )
+}
+
+function Hero(){
+    return(
+        <section className="hero">
+            <div className="hero-wrapper">
+                <h1>Hero</h1>
+            </div>
+        </section>
+    )
+}
+
+function About(){
+    return(
+        <section className="about">
+            <div className="about-wrapper">
+                <h1>About</h1>
+            </div>
         </section>
     )
 }
